@@ -1,0 +1,29 @@
+[project]
+name = "inmet-data-quality-analyzer"
+version = "1.0.0"
+description = "Aplicativo Streamlit para análise de qualidade de dados de estações meteorológicas automáticas do INMET"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Elivaldo Rocha", email = "carvalhovaldo09@gmail.com"}
+]
+
+dependencies = [
+    "streamlit>=1.28.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "plotly>=5.17.0",
+    "scipy>=1.11.0",
+    "scikit-learn>=1.3.0",
+    "reportlab>=4.0.0",
+    "weasyprint>=60.0",
+    "python-dateutil>=2.8.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["modules", "config.py", "app.py"]
