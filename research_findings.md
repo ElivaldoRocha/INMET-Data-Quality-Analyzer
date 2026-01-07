@@ -66,10 +66,3 @@ Para estações meteorológicas automáticas do INMET, os principais indicadores
 2. **Validade**: % de dados dentro de limites aceitáveis
 3. **Consistência**: Detecção de anomalias temporais
 4. **Integridade**: Verificação de sequência de datas
-
-## Recomendações para o App
-
-- Calcular índice de qualidade geral (0-100)
-- Mostrar relatório detalhado por variável
-- Indicar períodos problemáticos
-- Sugerir se dados são adequados para uso científico
